@@ -2,14 +2,266 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>takealot home</title>
+    <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Takealot..</title>
 </head>
 <body>
-    
-    <h1>
-       hello world g
-    </h1>
+    <div class="app">
 
+        <header class="flex flex-col h-[9rem] w-[100%] ">
+            <div class="flex items-center justify-between bg-white h-[4rem] pl-[120px] pr-[120px]" id="top">
+               <div class="flex items-center gap-10" id="left">
+                    <img class="h-[37px]" src="https://shopfront.takealot.com/b0fd31305b6ec6eb9e374f5e527a4ad540896d49/static/media/src/images/logo.svg-f6ccb489b85bbddf97d6.svg" alt="">
+                    <ul class="flex items-center gap-2">
+                        <li>
+                            <a href="#" class="text-[13px]">Help Center</a>
+                        </li>
+                        <li class="border-l p-2">
+                            <a href="#" class="text-[13px]">Sell on Takealot</a>
+                        </li>
+                    </ul>
+               </div>
+               <div class="flex items-center gap-1" id="right">
+                <ul class="flex items-center gap-2">
+                    <li>
+                        <a href="#" class="text-[13px]">Login</a>
+                    </li>
+                    <li class="border-l p-2">
+                        <a href="#" class="text-[13px]">Register</a>
+                    </li>
+                    <li class="border-l p-2">
+                        <a href="#" class="text-[13px]">Order</a>
+                    </li>
+                    <li class="border-l p-2">
+                        <a href="#" class="text-[13px]">My Account</a>
+                    </li>
+                    <li >
+                        <span class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl" id="heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                          </svg>
+                        </span>
+                        
+                    </li>
+                </ul>
+
+                <div class="flex items-center justify-center bg-[#1b8644] h-8 w-12 rounded-2xl gap-1 " id="cart">
+                    <div class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                    </div>
+                    <div class="text-white">8</div>
+                </div>
+
+               </div>
+            </div>
+
+            <div class="flex items-center gap-2 bg-[#0c79bf] h-[5rem] pl-[120px]" id="bottom">
+                <div class="absolute flex flex-col items-center justify-center bg-white w-52 mt-[445px] border border-gray-100 shadow text-[13px] rounded-md" >
+                    <ul class="flex flex-col items-center justify-center">
+                        <li class="flex items-center justify-center w-52 h-8 bg-[#4d4d4f] gap-8 rounded-t-md text-white">
+                            Shop by Department
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                              </svg>
+                        </li>
+                        <li class="w-52 h-6 ml-8 mt-2">
+                            Visual shopping Assistants
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Automotive & DIY
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Baby & Toddler
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Beauty
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Books & Courses
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Camping & Outdoor
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Clothing, shoes & Acces
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Electronics
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Gaming & Media
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Garden, Pool & Patio
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Groceries & Household
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Health & Personal Care
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Home& Appliances
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Liquor
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Office & Stationary
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Pets
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Sports & Training
+                        </li>
+                        <li class="w-52 h-6 ml-8">
+                            Toys
+                        </li>
+                        <li class="flex items-center justify-center gap-2 w-52 h-10 bg-[#26cd66] text-white font-extrabold text-[24px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                              </svg>
+                            Daily Deals
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-56">
+                <div class="flex">
+                    <input class="w-[930px] h-[30px] rounded-l text-[13px]" type="text" placeholder="    Search for your products, brand...">
+                    <button class="flex flex-col items-center justify-center bg-[#4d4d4f] h-[30px] w-[50px] rounded-r">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                </div>
+                
+                <div class="flex items-center justify-center mt-2" id="tabs">
+                   <div class="flex items-center justify-center bg-[#61409c] border-r-2 border-gray-300 rounded-l-md w-32 h-[30px] text-white text-[13px]">Alot for less</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-32 h-[30px] text-[13px]">World Cup 2023</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-32 h-[30px] text-[13px]">New to Takealot</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-28 h-[30px] text-[13px]">Summer</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-28 h-[30px] text-[13px]">Christmas</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-[132px] h-[30px] text-[13px]">Deals & Promotions</div>
+                   <div class="flex items-center justify-center bg-[#ededed] border-r-2 border-gray-300 w-28 h-[30px] text-[13px]">Clearance</div>
+                   <div class="flex items-center justify-center bg-[#ededed] rounded-r-md w-32 h-[30px] text-[13px]">Brands & Stores</div>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="flex items-center gap-4" id="top">
+                <div id="left">
+                    <div class=" mt-4">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner ml-[350px] w-[700px]">
+                              <div class=" carousel-item active">
+                                <img src="images/Takealot-Clearance.webp" class="d-block w-[700px] h-[300px]" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/11090206676144244992.png" class="d-block w-[700px] h-[300px]" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/16159154040048883273.png" class="d-block w-[700px] h-[300px]" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/6530135763186278095.png" class="d-block w-[700px] h-[300px]" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <p class="ml-[345px] mt-4 font-bold text-[#4d4d4f]">Featured Brands</p>
+                    <div class="flex items-center gap-4 ml-[355px] transition w-[700px]">
+                        <button class="flex items-center justify-center w-[35px] h-[35px] border-0 shadow-md rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                                <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                              </svg>
+                        </button>
+                        <img class="w-24" src="images/HealthBeauty_Brand15.webp" alt="">
+                        <img class="w-24" src="images/asus.webp" alt="">
+                        <img class="w-24" src="images/Computers_Brand4.webp" alt="">
+                        <img class="w-24" src="images/samsung.webp" alt="">
+                        <img class="w-24" src="images/boss.webp" alt="">
+                        <!--<img class="w-24" src="eps.webp" alt="">
+                        <img class="w-24" src="george_mason.webp" alt="">
+                        <img class="w-24" src="colgate.webp" alt="">-->
+                        <button class="flex items-center justify-center w-[35px] h-[35px] border-0 shadow-md rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                              </svg>
+                        </button>
+                        
+                    </div>
+                </div>
+                <div id="right">
+                    <img class="mt-[-195px]" src="images/Desktop - 1 (1).png" alt="">
+                
+                </div>
+                
+            </div>
+            <div class="bg-[#ededed] mt-[30px]" id="bottom">
+                <p class="font-bold text-[#4d4d4f] text-[20px] pt-8 ml-[120px]">Shop BOSS Fragrances</p>
+
+                <div class="flex items-center gap-4 ml-[355px] pt-4 transition w-[1000px]">
+                    <div class="flex items-center justify-center gap-[19px] ml-[-235px]">
+                    <button class="flex items-center  justify-center absolute ml-[-930px] w-[35px] h-[35px] border-0 shadow-md rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                            <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                          </svg>
+                    </button>
+
+                    <div class="flex flex-col items-center justify-center bg-white h-[250px] w-[220px]">
+                    <img class="w-[110px]" src="images/boss1.webp" alt="">
+                    <p class="text-[13px] mt-4 ml-[-35px]">Boss Bottled Eau de <br>Toilette for Men 100ml</p>
+                    <p class="font-bold mt-8 ml-[-110px]">R 1,795</p>
+                    </div> 
+
+                    <div class="flex flex-col items-center justify-center bg-white h-[250px] w-[220px]">
+                        <img class="w-[110px]" src="images/boss2.jpeg" alt="">
+                        <p class="text-[13px] mt-4 ml-[-35px]">Boss The Scent Perfum <br>for Men 100ml</p>
+                        <p class="font-bold mt-8 ml-[-110px]">R 2,195</p>
+                        </div> 
+
+                        <div class="flex flex-col items-center justify-center bg-white h-[250px] w-[220px]">
+                            <img class="w-[90px]" src="images/hugo.jpg" alt="">
+                            <p class="text-[13px] mt-4 ml-[-35px]">Hugo Jeans for Him Eau <br>de Toilette 75ml</p>
+                            <p class="font-bold mt-8 ml-[-110px]">R 1,330</p>
+                            </div> 
+
+                            <div class="flex flex-col items-center justify-center bg-white h-[250px] w-[220px]">
+                                <img class="w-[110px]" src="images/bossstick.avif" alt="">
+                                <p class="text-[13px] mt-4 ml-[-35px]">HUGO BOSS Boss the <br>Scent Deo stick 750ml</p>
+                                <p class="font-bold mt-8 ml-[-110px]">R 395</p>
+                                </div> 
+
+                    <button class="flex items-center justify-center absolute ml-[930px] w-[35px] h-[35px] border-0 shadow-md rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                          </svg>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
