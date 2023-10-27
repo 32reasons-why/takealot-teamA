@@ -7,6 +7,7 @@
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Orders</title>
 </head>
 <body>
@@ -28,13 +29,13 @@
             <div class="flex items-center gap-1" id="right">
              <ul class="flex items-center gap-2">
                  <li>
-                     <a href="#" class="text-[13px]">Login</a>
+                     <a href="#" class="text-[13px]">Hi Andile</a>
                  </li>
                  <li class="border-l p-2">
-                     <a href="#" class="text-[13px]">Register</a>
+                     <a href="#" class="text-[13px]">Logout</a>
                  </li>
                  <li class="border-l p-2">
-                     <a href="#" class="text-[13px]">Order</a>
+                     <a href="#" class="text-[13px]">Orders</a>
                  </li>
                  <li class="border-l p-2">
                      <a href="#" class="text-[13px]">My Account</a>
@@ -139,7 +140,7 @@
                 <a href="#" class="text-[#0c79bf]"><p>Redeem Gift Voucher</p></a>
             </div>
         </div>
-        <div class="flex-col px-4 border-b-2 mt-4">
+        <div class="flex-col px-4 border-b-2 mt-4 flex items-center">
             <div class="flex gap-2"> 
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -191,14 +192,39 @@
 
             
                 <div class="flex gap-2 px-2">
-                    
-                   <span class="text-gray-400 text-xs">Orders Placed in:</span> 
-                    <span class="mt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0c79bf" class="bi bi-calendar-event" viewBox="0 0 16 16">
-                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                          </svg>
-                    </span>
+                    <div class="flex items-center">
+                        <span class="text-gray-400 text-xs">Orders Placed in:</span>
+  
+                         
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0c79bf" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg>
+
+                        <select  class="hover:bg-gray-100 w-[200px] h-[40px]">
+                            <option value="">
+                                <div class="flex">
+
+                                
+                                      <p><i class="fas fa-calendar"></i> Last 3 months</p>
+                                </div>
+                            </option>
+  
+     
+                            <option value="">Last 6 months</option>
+                            <option value="">2023</option>
+                            <option value="">2022</option>
+                            <option value="">2021</option>
+                            <option value="">2020</option>
+                            <option value="">2019</option>
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                            <option value="">2016</option>
+        
+                        </select>
+        
+                    </div>
+
 
                 </div>
 
