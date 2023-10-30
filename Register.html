@@ -6,48 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-   
+    <script src="https://kit.fontawesome.com/fa42fec0b4.js" crossorigin="anonymou s"></script>
     <title>Takealot..</title>
 </head>
 <body>
     <div class="bg-black">
 
-        <header class="flex flex-col h-[9rem] w-[100%] ">
+        <header class="flex flex-col h-[9rem] w-[100%] hidden md:block">
             <div class="flex items-center justify-between bg-white h-[4rem] pl-[120px] pr-[120px]" id="top">
-               <div class="flex items-center gap-10" id="left">
+               
+                <input type="checkbox" id="check" hidden class="">
+            <label for="check" class="float-left text-[#4d4d4f] text-3xl leading-[80px] mr-4 md:hidden">
+                <i class="fas fa-bars"></i>
+            </label>
+
+                <div class="flex items-center gap-10" id="left">
                     <img class="h-[37px]" src="https://shopfront.takealot.com/b0fd31305b6ec6eb9e374f5e527a4ad540896d49/static/media/src/images/logo.svg-f6ccb489b85bbddf97d6.svg" alt="">
                     <ul class="flex items-center gap-2">
                         <li>
-                            <a href="#" class="text-[13px]">Help Center</a>
+                            <a href="#" class="text-[13px] hidden md:block">Help Center</a>
                         </li>
                         <li class="border-l p-2">
-                            <a href="#" class="text-[13px]">Sell on Takealot</a>
+                            <a href="sellontakealot.html" class="text-[13px] hidden md:block">Sell on Takealot</a>
                         </li>
                     </ul>
                </div>
                <div class="flex items-center gap-1" id="right">
-                <ul class="flex items-center gap-2">
+                <ul class="lg:flex items-center justify-center text-[#4d4d4f] fixed lg:relative h-[100vh] lg:h-0 lg:top-0 left-[100%] lg:left-0 transition-all duration-300 lg:transition-none">
                     <li>
-                        <a href="#" class="text-[13px]">Login</a>
+                        <a href="#" class="text-[13px] mr-2">Login</a>
                     </li>
                     <li class="border-l p-2">
                         <a href="#" class="text-[13px]">Register</a>
                     </li>
                     <li class="border-l p-2">
-                        <a href="#" class="text-[13px]">Order</a>
+                        <a href="#" class="text-[13px]">Orders</a>
                     </li>
                     <li class="border-l p-2">
-                        <a href="#" class="text-[13px]">My Account</a>
+                        <a href="">
+                            <select name="account" class="text-[13px]" id="acc">
+                                <option value="">My Account</option>
+                                <option value="">Track Orders</option>
+                                <option value="">Returns</option>
+                                <option value="">Credit & Refunds</option>
+                                <option value="">Product Reviews</option>
+                                <option value="">Invoices</option>
+                                <option value="">Personal Deatails</option>
+                                <option value="">Help Center</option>
+                            </select>
+                        </a>
                     </li>
-                    <li >
-                        <span class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl" id="heart">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                          </svg>
-                        </span>
                         
-                    </li>
                 </ul>
+
+                <div class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl ml-4" id="heart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                  </svg>
+                </div>
 
                 <div class="flex items-center justify-center bg-[#1b8644] h-8 w-12 rounded-2xl gap-1 " id="cart">
                     <div class="left">
@@ -61,7 +77,7 @@
                </div>
             </div>
 
-            <div class="flex items-center gap-2 bg-[#0c79bf] h-[5rem] pl-[120px]" id="bottom">
+            <div class="md:flex items-center gap-2 md:bg-[#0c79bf] h-[5rem] pl-[120px] hidden md:block" id="bottom">
                 <div class="absolute flex flex-col items-center justify-center bg-white w-52 mt-[445px] border border-gray-100 shadow text-[13px] rounded-md" >
                     <ul class="flex flex-col items-center justify-center">
                         <li class="flex items-center justify-center w-52 h-8 bg-[#4d4d4f] gap-8 rounded-t-md text-white">
@@ -158,32 +174,36 @@
         </header>
 
         <div class="">
-            <form action="index.html" class="absolute flex flex-col border items-center justify-center bg-white w-[550px] rounded mt-4 ml-[450px] h-[800px]">
-                <p class="font-bold ml-[-410px] text-[19px]">Register</p>
-                <div class="flex mt-[25px] gap-4">
+            <form action="index.html" class="md:absolute md:flex md:flex-col border items-center justify-center bg-white md:w-[550px] rounded md:mt-4 md:ml-[450px] md:h-[800px]">
+                
+                <p class="font-bold md:ml-[-410px] text-[19px]">Register</p>
 
-                    <button formaction="https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHLpXqpTvHmHJKmSbWkzGqKlX" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                <span class="bg-transparent border-b-[1px] md:w-[410px] border-gray-400 md:hidden"></span>
+                
+                <div class="md:flex mt-[25px] items-center justify-center gap-4">
+
+                    <button formaction="https://mail.google.com/mail/u/0/#inbox/FMfcgzGwHLpXqpTvHmHJKmSbWkzGqKlX" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm:ease-in-out delay-500 h-[40px] w-[460px] md:w-[230px]">
                         <img src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/google-button-icon.svg-ee936397411f7699859e.svg" alt="">
-                        <p class="text-gray-400">Register with Google</p>
+                        <p class="text-gray-400 text-[14px]">Register with Google</p>
                     </button>
                 
                 
-                    <button formaction="www.facebook.com" class="flex items-center justify-center text-[15px] gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                    <button formaction="www.facebook.com" class="flex items-center justify-center mt-0 md:mt-2 text-[15px] gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[460px] md:w-[230px]">
                         <img class="w-[20px] rounded" src="https://pngimg.com/d/facebook_logos_PNG19750.png" alt="">
-                        <p class="text-gray-400">Register with Facebook</p>
+                        <p class="text-gray-400 text-[14px]">Register with Facebook</p>
                     </button>
                 </div>
                 <div class="flex gap-4">
                     <span class="bg-transparent  border-b-[1px] w-[210px] border-gray-400"></span>
                     
-                    <p class="text-gray-400">or</p>
+                    <p class="text-gray-400 text-[14px]">Or</p>
                     <span class="bg-transparent  border-b-[1px] w-[210px] border-gray-400"></span>
                     
                 </div>
-                <input type="text" name="firstName" class="bg-transparent hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[15px] mt-8 border-gray-400" placeholder="First Name" id="">
-                <input type="text" name="LastName" class="bg-transparent hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[15px] mt-8 border-gray-400" placeholder="Last Name" id="">
-                <input type="email" name="email" class="bg-transparent hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[15px] mt-8 border-gray-400" placeholder="Email Address" id="">
-                <input type="password" name="password" class="bg-transparent hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[15px] mt-8 border-gray-400" placeholder="Password" id="">
+                <input type="text" name="firstName" class="bg-transparent hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[13px] mt-8 border-gray-400" placeholder="First Name" id="">
+                <input type="text" name="LastName" class="bg-transparent hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[13px] mt-8 border-gray-400" placeholder="Last Name" id="">
+                <input type="email" name="email" class="bg-transparent hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[13px] mt-8 border-gray-400" placeholder="Email Address" id="">
+                <input type="password" name="password" class="bg-transparent hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[480px] text-[13px] mt-8 border-gray-400" placeholder="Password" id="">
                 <button class="absolute mt-[100px] ml-[450px]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
                     <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
@@ -195,7 +215,7 @@
                 <p class="text-gray-400 mb-[-40px] mt-8 ml-[-450px] text-[13px]">Code</p>
                 <div class=" flex items-center justify-center gap-8">
                     
-                <select name="code" id="" class="hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-gray-400 border-b-[2px] mt-10 ml-[-2px] w-[80px] h-[40px] ">
+                <select name="code" id="" class="hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-gray-400 border-b-[2px] mt-10 text-[13px] ml-[-2px] w-[80px] h-[40px] ">
                     
                     <option value="">ZA(+27)</option>
                     <option value="">AF(+93)</option>
@@ -210,18 +230,18 @@
 
                 </select>
 
-                <input type="tel" name="phone" class="bg-transparent hover:bg-gray-100 transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[365px] text-[15px] mt-8 border-gray-400" placeholder="Mobile Number" id="">
+                <input type="tel" name="phone" class="bg-transparent hover:bg-gray-100 hover:border-black transition sm\:ease-in-out delay-500 border-b-[2px] h-[50px] w-[365px] text-[13px] mt-8 border-gray-400" placeholder="Mobile Number" id="">
                 
                 </div>
                 <p class="text-gray-400 text-[12px] ml-[-195px]">We will send an OTP via SMS to verify this number</p>
-                <div class="flex gap-4 mt-8"><input type="checkbox" class="ml-[-110px]" name="" id=""><p class="text-[12px] font-bold">I want to receive offers and wish list newsletters</p></div>
+                <div class="flex gap-4 mt-8"><input type="checkbox" class="ml-[-110px]" name="" id=""><p class="text-[12px] font-medium">I want to receive offers and wish list newsletters</p></div>
 
-                <button class="flex items-center justify-center text-[15px] gap-[16px] font-light border mt-8 bg-[#91bcdf] rounded h-[50px] w-[480px]">
+                <button class="flex items-center justify-center text-[15px] gap-[16px] font-light border mt-8 bg-[#0e6cac] hover:bg-[#0c79bf] transition sm\:ease-in-out delay-500 rounded h-[45px] w-[480px]">
                     
-                    <p class="text-white font-bold text-[15px]">Continue</p>
+                    <p class="text-white font-bold text-[13px]">Continue</p>
                 </button>
 
-                <p class="text-[12px]">By clicking on 'Continue', you agree to our <a class="text-[#91bcdf] text-[12px]" href="https://www.takealot.com/help/terms-and-conditions">Terms and Conditions</a> and confirm <br> that you are over 18 years of age</p>
+                <p class="text-[12px]">By clicking on 'Continue', you agree to our <a class="text-[#0e6cac] text-[12px]" href="https://www.takealot.com/help/terms-and-conditions">Terms and Conditions</a> and confirm <br> that you are over 18 years of age</p>
 
             </form>
 
