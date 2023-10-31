@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
+    <style>
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffff;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+
     <title>Takealot..</title>
 </head>
 <body>
@@ -37,18 +62,20 @@
                         <a href="orders.html" class="text-[13px]">Order</a>
                     </li>
                     <li class="border-l p-2">
-                        <a href="">
-                            <select name="account" class="text-[13px]" id="acc">
-                                <option value="">My Account</option>
-                                <option value="">Track Orders</option>
-                                <option value="">Returns</option>
-                                <option value="">Credit & Refunds</option>
-                                <option value="">Product Reviews</option>
-                                <option value="">Invoices</option>
-                                <option value="">Personal Deatails</option>
-                                <option value="">Help Center</option>
-                            </select>
-                        </a>
+                        <div class="dropdown text-[13px]" >
+
+                            <a href="#" class="dropbtn">My Account </i></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.takealot.com/account" >My Account</a>
+                                <a href="https://www.takealot.com/account">Track Order</a>
+                                <a href="https://www.takealot.com/account">Returns</a>
+                                <a href="https://www.takealot.com/account">Credit & Refunds</a>
+                                <a href="https://www.takealot.com/account">Product Reviews</a>
+                                <a href="https://www.takealot.com/account">Invoices </a>
+                                <a href="https://www.takealot.com/account">Personal Details</a>
+                                <a href="https://www.takealot.com/help-centre">Help Center</a>
+                            </div>
+                        </div>
                     </li>
                     <li >
                         <span class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl" id="heart">
@@ -329,5 +356,223 @@
 
     </div>
     
+    <div class="mt-[40rem] bg-white shadow-xs h-[23.8rem] px-[120px]">
+
+        <div class="flex justify-content-between">
+            <div class="flex-col mt-8">
+                <a href="">
+                    <p class="text-sm font-semibold mb-2">Shop</p>
+                </a>
+                <a href="index.html">
+                    <p class="text-sm">Daily Deals</p>
+                </a>
+                <a href="https://apps.apple.com/za/app/takealot-mobile-shopping-app/id606927881">
+                    <p class="text-sm">App only deals</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Clearance Sale</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Gift vouchers</p>
+                </a>
+                <a href="">
+                    <p class="text-sm font-semibold mt-2 mb-2">Takealot.group</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Superbalist.com</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Mr D</p>
+                </a>
+            </div>
+
+            <div class="flex-col mt-8">
+
+                <a href="">
+                    <p class="text-sm font-semibold mb-2">Help</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Help Center</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Contact us</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Submit an Idea</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Suggest a Product</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Shipping & Delivery</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Takealot Pickup Points</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Returns</p>
+                </a>
+
+            </div>
+
+            <div class="flex-col mt-8">
+
+                <a href="">
+                    <p class="text-sm font-semibold mb-2">Account</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">My Account</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Track Order</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Returns</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Personal Details</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Invoices</p>
+                </a>
+
+            </div>
+
+            <div class="flex-col mt-8">
+
+                <a href="">
+                    <p class="text-sm font-semibold mb-2">Company</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">About us</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Careers</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Sell on Takealot</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Deliver for Takealot</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Press & News</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Competitions</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Terms & Conditions</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Privacy Policy</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Human Rights Statement</p>
+                </a>
+                <a href="">
+                    <p class="text-sm">Speak Up Process</p>
+                </a>
+
+            </div>
+
+            <div class="flex-col mt-8">
+
+                <div class="flex-col mr-20">
+                    <a href="">
+                        <p class="text-sm font-semibold mb-2">Download Our Apps</p>
+                    </a>
+                    
+                </div>
+
+                <form action="">
+
+                    <div>
+                        <button class="h-[37px] " formaction="https://apps.apple.com/za/app/takealot-mobile-shopping-app/id606927881" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                            <img class="h-[37px]"src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/app-store.svg-edce310696aa7f6191a1.svg" alt="">
+                        </button> 
+                    </div>
+
+                    <div>
+                        
+                        <a href="">
+                            <button class="h-[37px]" formaction="https://play.google.com/store/apps/details?id=fi.android.takealot" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                                <img class="h-[37px]"src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/google-play.svg-7a92427373a19e40a662.svg" alt="">
+                            </button>
+                        </a>
+                        
+                    </div>
+
+                    <div class="">
+                        <a href="">
+                            <button class="h-[37px]" formaction="https://appgallery.huawei.com/app/C100314845?sharePrepath=ag&locale=en_US&source=appshare&subsource=C100314845&shareTo=com.whatsapp&shareFrom=appmarket&shareIds=683ae121c77045fb832192e88b512ada_com.whatsapp&callType=SHARE" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                                <img class="h-[37px]"src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/huawei-appgallery.svg-bb1c8aaa1305360a018d.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+
+                </form>
+
+                
+
+                <div>
+                    <p class="text-sm font-semibold mt-3">Follow Us</p>
+                </div>
+                <div class="flex mt-2 gap-2">
+                    <button class="rounded-full" formaction="https://www.facebook.com" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                        <img class="h-[26px] rounded-full"src="https://seeklogo.com/images/F/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" alt="">
+                    </button>
+                    <button class="rounded-full" formaction="https://www.facebook.com" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                        <img class="h-[26px] rounded-full"src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-1024.png" alt="">
+                    </button>
+                    <button class="rounded-full" formaction="https://www.facebook.com" class="flex items-center justify-center gap-[16px] font-light border bg-white hover:bg-gray-100 transition sm\:ease-in-out delay-500 h-[40px] w-[230px]">
+                        <img class="h-[26px] rounded-full"src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png" alt="">
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="border-b-[1.1px] mt-4">
+                
+        </div>
+        <p class="text-[13px] mt-3 text-[#378acb] " >Baby & Toddler / Beauty / Books / Cameras / Camping & Outdoors / Cellphones & Wearables / Computers & Tablets / Fashion / Gaming / Garden, Pool & Patio / HealthHome & Kitchen / Luggage & Travel / Movies & Series / Music / Office & Stationery / PetsSportTV, Audio & Video / Toys / Vouchers</p>
+        <div>
+
+        </div>
+
+    </div>
+
+    <!-- logos -->
+    <div class="flex bg-[#0c79bf] h-[5.15rem] px-[120px] justify-content-between">
+        
+        <div class="flex items-center gap-4">
+            <img  class="bg-blend-color h-[20px] " src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/visa.svg-af3e99c35d73e394b54d.svg" alt="">
+    
+            <img class="h-[27px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/mastercard.svg-23a3ce15866685c8506f.svg" alt="">
+        
+            <img class="h-[24px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/american-express.svg-c015bac32018ca240301.svg" alt="">
+        
+            <img class="h-[20px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/diners-club-international.svg-1fbac96b68e4b755fc49.svg" alt="">
+        
+            <img class="h-[20px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/payfast.svg-d10895e3af0dedb31817.svg" alt="">
+        
+            <img class="h-[20px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/ozow.svg-5a25c4b6e18a84f487eb.svg" alt="">
+        
+            <img class="h-[24px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/ebucks.svg-56934a5cf17963365d09.svg" alt="">
+        
+            <img class="h-[13px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/mobicred.svg-bda9a4b182e4dd57d514.svg" alt="">
+        
+            <img class="h-[39px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/Discovery-Miles-web-icon.png-96dc92f96edcb8d82f52.png" alt="">
+        
+            <img class="h-[15px]" src="https://shopfront.takealot.com/13eff8fb49302e59b7e8b9c7a03563835e301383/static/media/src/images/payment-providers/payflex.svg-8961bc011a0bea670239.svg" alt="">
+        </div>
+
+        <div class="flex items-center text-xs text-[#a7c9e6] gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a7c9e6" class="bi bi-c-circle" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+              </svg>
+            <p>Takealot Online (Pty) Ltd.</p>
+        </div>
+    </div>
 </body>
 </html>
