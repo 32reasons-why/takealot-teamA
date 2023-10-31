@@ -13,7 +13,7 @@
         .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f1f1f1;
+        background-color: #ffff;
         min-width: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -25,12 +25,6 @@
         text-decoration: none;
         display: block;
         white-space: nowrap;
-        /* display:inline-block; */
-        /* justify-content: flex-start; */
-        /* width: fit-content; */
-        /* margin-top: fit-content;
-        min-height: fit-content; */
-        /* text-align: center; */
 
         }
 
@@ -68,7 +62,7 @@
                         <a href="orders.html" class="text-[13px]">Orders</a>
                     </li>
                     <li class="border-l p-2">
-                        <div class="dropdown" >
+                        <div class="dropdown text-[13px]" >
                             
                             <a href="#" class="dropbtn">My Account </i></a>
                             <div class="dropdown-content">
@@ -86,7 +80,7 @@
                         
                 </ul>
 
-                <div class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl ml-4" id="heart">
+                <div class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl ml-4 hidden md:block" id="heart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                   </svg>
@@ -106,7 +100,7 @@
            </div>
         </div>
         <div class="flex items-center gap-2 bg-[#0c79bf] h-[2.5rem] pl-[120px]" id="bottom">
-            <div class="absolute flex flex-col items-center justify-center h-8 w-52 border border-gray-100 shadow text-[13px] rounded-md" >
+            <div class="absolute flex flex-col items-center justify-center h-8 w-52 border border-gray-100 shadow text-[13px] rounded-md hidden md:block" >
                 <ul class="flex flex-col items-center justify-center">
                     <li class="flex items-center justify-center w-52 h-8 bg-[#4d4d4f] gap-8 rounded-md text-white">
                         Shop by Department
@@ -227,7 +221,7 @@
     
     <div class="flex-col flex-1 ml-6 h-[29rem]">
         
-        <div class="h-24 rounded-full">
+        <div class="h-24 rounded-full hidden md:block">
             <a href="#"><img class="h-24" src="https://tpc.googlesyndication.com/simgad/11029035697203477789" alt=""></a>
         </div>
          

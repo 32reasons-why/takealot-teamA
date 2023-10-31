@@ -6,7 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-   
+
+    <style>
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffff;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+
     <title>Takealot..</title>
 </head>
 <body>
@@ -37,18 +62,20 @@
                         <a href="orders.html" class="text-[13px]">Order</a>
                     </li>
                     <li class="border-l p-2">
-                        <a href="">
-                            <select name="account" class="text-[13px]" id="acc">
-                                <option value="">My Account</option>
-                                <option value="">Track Orders</option>
-                                <option value="">Returns</option>
-                                <option value="">Credit & Refunds</option>
-                                <option value="">Product Reviews</option>
-                                <option value="">Invoices</option>
-                                <option value="">Personal Deatails</option>
-                                <option value="">Help Center</option>
-                            </select>
-                        </a>
+                        <div class="dropdown text-[13px]" >
+
+                            <a href="#" class="dropbtn">My Account </i></a>
+                            <div class="dropdown-content">
+                                <a href="https://www.takealot.com/account" >My Account</a>
+                                <a href="https://www.takealot.com/account">Track Order</a>
+                                <a href="https://www.takealot.com/account">Returns</a>
+                                <a href="https://www.takealot.com/account">Credit & Refunds</a>
+                                <a href="https://www.takealot.com/account">Product Reviews</a>
+                                <a href="https://www.takealot.com/account">Invoices </a>
+                                <a href="https://www.takealot.com/account">Personal Details</a>
+                                <a href="https://www.takealot.com/help-centre">Help Center</a>
+                            </div>
+                        </div>
                     </li>
                     <li >
                         <span class="flex justify-center items-center bg-[#f46879] h-8 w-8 rounded-2xl" id="heart">
